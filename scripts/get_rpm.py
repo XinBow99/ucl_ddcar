@@ -20,10 +20,10 @@ def talker():
         # Parse the response and publish to ROS topics
         values = data.split(',')
         if len(values) == 2:
-            left_pwm = values[0]
-            right_pwm = values[1]
-            pub_left.publish(left_pwm)
-            pub_right.publish(right_pwm)
+            left_rpm = values[0]
+            right_rpm = values[1]
+            pub_left.publish(left_rpm)
+            pub_right.publish(right_rpm)
 
         rate.sleep()
 
